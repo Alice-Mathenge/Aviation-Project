@@ -20,22 +20,43 @@ The goal is to support **data-driven aircraft purchase decisions** for safer and
 
 **Source of Data:** [Kaggle - Aviation Accidents and Incidents Dataset](https://www.kaggle.com/)  
 
-**Dataset Description:**  
-- 88,889 records spanning from 1962 to 2023  
-- 22 columns including aircraft category, make, model, injury severity, flight purpose, phase of flight, weather, and number of injuries.  
+### Data Understanding and Description
 
-**Sample Columns:**
-- `Aircraft.Category`
-- `Make`
-- `Model`
-- `Purpose.of.flight`
-- `Broad.phase.of.flight`
-- `Weather.Condition`
-- `Total.Fatal.Injuries`
-- `Total.Serious.Injuries`
-- `Total.Minor.Injuries`
-- `Total.Uninjured`
-- `Injury_Severity`
+**Source of Data:** Kaggle – Aviation Accidents and Incidents Dataset  
+
+**Dataset Description:**  
+The dataset contains **90,348 records** and **31 columns** of aviation accidents and incidents from various sources. It includes a wide range of information about each event, including aircraft type, flight purpose, injury severity, location, and operational context.
+
+
+**Columns and Key Information:**  
+
+| Column                     | Non-Null Count | Data Type | Description |
+|----------------------------|---------------|-----------|-------------|
+| Event.Id                   | 88,889        | object    | Unique identifier for the event |
+| Investigation.Type         | 90,348        | object    | Type of investigation (Accident/Incident) |
+| Accident.Number            | 88,889        | object    | Official accident number |
+| Event.Date                 | 88,889        | object    | Date of the event |
+| Location                   | 88,837        | object    | Event location |
+| Country                    | 88,663        | object    | Country where event occurred |
+| Latitude                   | 34,382        | object    | Latitude of event location |
+| Longitude                  | 34,373        | object    | Longitude of event location |
+| Airport.Code               | 50,132        | object    | ICAO/IATA code of airport, if applicable |
+| Airport.Name               | 52,704        | object    | Name of airport, if applicable |
+| Injury.Severity            | 87,889        | object    | Severity of injuries (Fatal, Serious, Minor, Uninjured) |
+| Aircraft.damage            | 85,695        | object    | Level of aircraft damage |
+| Aircraft.Category          | 32,287        | object    | Aircraft category (Airplane, Helicopter, Ultralight, etc.) |
+| Registration.Number        | 87,507        | object    | Aircraft registration |
+| Make                       | 88,826        | object    | Aircraft manufacturer |
+| Model                      | 88,797        | object    | Aircraft model |
+| Amateur.Built              | 88,787        | object    | Whether aircraft is amateur-built |
+| Number.of.Engines          | 82,805        | float64   | Number of engines on aircraft |
+| Engine.Type                | 81,793        | object    | Type of engine(s) |
+| FAR.Description            | 32,023        | object    | Regulatory description applicable |
+| Report.Status              | 82,505        | object    | Status of the report |
+| Publication.Date           | 73,659        | object    | Date report was published |
+
+> **Note:** Some columns have missing values, especially geolocation (Latitude/Longitude), aircraft category, and airport information. This dataset provides a comprehensive view of aviation accidents worldwide, but cleaning and preprocessing are required for accurate analysis.
+
 
 ---
 
