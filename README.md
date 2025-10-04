@@ -60,7 +60,13 @@ The dataset contains **90,348 records** and **31 columns** of aviation accidents
 
 ---
 
-## Dashboard
+##  Interactive Dashboard
+
+Explore the interactive dashboard here:  
+[Aircraft Accident Analysis Dashboard (1962–2023)](https://public.tableau.com/views/AircraftAccidentAnalysis_17595793151910/AircraftAccidentAnalysisDashboard19622023?publish=yes)
+
+## Jupyter Notebook Visualizations
+
 
 Below are the key visualizations summarizing injury severity across aircraft categories, manufacturers, and flight contexts:
 
