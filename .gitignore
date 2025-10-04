@@ -1,0 +1,22 @@
+# Ignore temporary files
+*.log
+*.tmp
+*.bak
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore Python cache folders
+__pycache__/
+*.pyc
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore virtual environments
+venv/
+env/
+
+# Ignore large datasets (optional)
+data/raw/
